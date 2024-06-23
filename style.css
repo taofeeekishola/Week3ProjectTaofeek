@@ -1,3 +1,7 @@
+@font-face{
+	font-family:escanor;
+	src:url("fonts/TitilliumWeb-Regular.woff") format("woff");
+}
 *{
 	padding:0;
 	margin:0;
@@ -6,6 +10,7 @@
 body{
 	background-color:#3626A7;
 	color:#FBFBFF;
+	font-family:escanor;
 }
 
 .main{
