@@ -1,0 +1,99 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	border:1px solid purple;
+}
+
+.main{
+	width:100%;
+	min-height:1000px;
+}
+
+/*styling the navbar*/
+.first{
+	width:100%;
+	height:50px;
+	display:flex;
+	justify-content: space-around;
+}
+.name{
+	width:20%;
+	height:100%;
+}
+.name p{
+	margin-top:15px;
+}
+.navbar{
+	width:70%;
+	height:inherit;
+	text-align:right;
+} 
+.navbar ul li{
+	list-style-type: none;
+	display:inline-block;
+	padding:0px 30px;
+	margin-top:15px;
+}
+.navbar ul li a{
+	text-decoration:none;
+	color:black;
+}
+
+/*styling the about section*/
+.second{
+	width:100%;
+	height:400px;
+	display:flex;
+	justify-content:space-around;
+}
+.about{
+	width:40%;
+	height:inherit;
+}
+
+/*styling the project area*/
+.third{
+	width:100%;
+	height:500px;
+	display:flex;
+	justify-content:space-around;
+}
+.project{
+	width:100%;
+	height:inherit;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-around;
+}
+.details{
+	width:80%;
+	height:80%
+}
+.skills{
+	width:80%;
+	height:10%;
+}
+
+/*styling the contact section*/
+.fourth{
+	width:100%;
+	height:300px;
+}
+.contact{
+	width:70%;
+	height:inherit;
+	margin:auto;
+}
+
+/*styling the footer*/
+.fifth{
+	width:100%;
+	height:80px;
+}
+.footer{
+	width:70%;
+	height:inherit;
+	margin:auto;
+}
