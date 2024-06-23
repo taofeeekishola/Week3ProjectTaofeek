@@ -272,6 +272,9 @@ body{
 	.about a{
 		width:50%;
 	}
+	.mypic{
+		width:70%;
+	}
 	.heading h1{
 		font-size:50px;
 	}
