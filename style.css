@@ -278,6 +278,9 @@ body{
 	.heading h1{
 		font-size:50px;
 	}
+	.skills p{
+		padding:5px;
+	}
 	.buttton{
 		width:50%;
 	}
@@ -293,6 +296,10 @@ body{
 	.footer h2{
 		font-size:30px;
 	}
+}
+
+@media screen and (max-width:480px){
+	
 }
 
 
