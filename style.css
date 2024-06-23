@@ -20,6 +20,9 @@ body{
 	display:flex;
 	justify-content: space-around;
 	background-color:#000000;
+	position:sticky;
+	top:0px;
+	z-index:10;
 }
 .name{
 	width:20%;
@@ -27,8 +30,11 @@ body{
 }
 .name p{
 	margin-top:15px;
-	color: #F038FF;
 	font-size:30px;
+}
+.name p a{
+	text-decoration:none;
+	color: #F038FF;
 }
 .navbar{
 	width:70%;
@@ -44,6 +50,9 @@ body{
 .navbar ul li a{
 	text-decoration:none;
 	color:#FBFBFF;
+}
+.navbar ul li a:hover{
+	color:#F038FF;
 }
 
 /*styling the about section*/
@@ -69,7 +78,7 @@ body{
 	text-decoration:none;
 	color:black;
 	background-color:#F038FF;
-	width:20%;
+	width:30%;
 	padding:10px;
 	border-radius:20px;
 }
@@ -102,7 +111,6 @@ body{
 }
 .project{
 	width:45%;
-	height:inherit;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
@@ -111,24 +119,42 @@ body{
 .details{
 	width:80%;
 	height:80%;
-	background-color:red;
+	background-color:#F038FF;
 	background-image:url(images/Project1.png);
 	background-repeat:no-repeat;
 	background-size:cover;
-	display:flex;
-	flex-direction:column;
-	justify-content: flex-end;
 	border-radius:10px;
+	overflow: hidden;
+	position:relative;
 }
 .details a{
 	text-decoration:none;
-	color:black;
+	color:white;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(128, 0, 128, 0.8); /* Overlay background color */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	padding:0px 15px;
+}
+.details:hover .overlay {
+  opacity: 1;
+}
+.overlay h2, .overlay p {
+  margin: 10px 0;
+  text-align: center;
 }
 .two{
-	background-color:red;
 	background-image:url(images/Project2.png);
-	background-repeat:no-repeat;
-	background-size:cover;
 }
 .skills{
 	width:80%;
